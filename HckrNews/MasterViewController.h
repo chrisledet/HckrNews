@@ -18,6 +18,4 @@
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 
-- (void) refresh;
-
 @end

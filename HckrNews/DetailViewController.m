@@ -38,18 +38,18 @@
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
+    /* Update the UI for the current story */
     if (_currentStory) {
         self.title = _currentStory.title;
         NSURLRequest* request = [[NSURLRequest alloc] initWithURL:_currentStory.url];
         [self.detailWebView loadRequest:request];
+        [request release];
     }
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
@@ -57,7 +57,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
 }
 

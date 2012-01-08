@@ -10,6 +10,9 @@
 #import "DetailViewController.h"
 
 #define CELL_FONT_SIZE 14.0
+#define RED   (255/255.0)
+#define GREEN (99/255.0)
+#define BLUE  (38/255.0)
 
 @implementation MasterViewController
 
@@ -60,6 +63,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:RED green:GREEN blue:BLUE alpha:1.0];
     [self loadFeed];
 }
 

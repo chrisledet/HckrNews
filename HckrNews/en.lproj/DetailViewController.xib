@@ -35,7 +35,7 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIWebView" id="584247426">
+					<object class="IBUIWebView" id="445837918">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
 						<string key="NSFrameSize">{320, 460}</string>
@@ -56,7 +56,7 @@
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="584247426"/>
+				<reference key="NSNextKeyView" ref="445837918"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -64,7 +64,9 @@
 						<int key="NSID">2</int>
 					</object>
 				</object>
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
+				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
+					<int key="IBUIStatusBarStyle">2</int>
+				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 		</array>
@@ -82,7 +84,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">detailWebView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="584247426"/>
+						<reference key="destination" ref="445837918"/>
 					</object>
 					<int key="connectionID">8</int>
 				</object>
@@ -99,7 +101,7 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="584247426"/>
+							<reference ref="445837918"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -116,7 +118,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">7</int>
-						<reference key="object" ref="584247426"/>
+						<reference key="object" ref="445837918"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
