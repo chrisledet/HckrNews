@@ -5,9 +5,7 @@ a Hacker News client for your iOS device (iPad, iPhone and iPod Touch).
 ### Screenshots
 
 [![](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Content.png)](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Content.png)
-
 [![](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Feed.png)](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Feed.png)
-
 [![](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Pull%20to%20Refresh.png)](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Pull%20to%20Refresh.png)
 
 ### Acknowledgements
