@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		831EA5A714B94CB100C2D028 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EA5A614B94CB100C2D028 /* UIKit.framework */; };
+		831EA5A914B94CB100C2D028 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EA5A814B94CB100C2D028 /* Foundation.framework */; };
+		831EA5AB14B94CB100C2D028 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EA5AA14B94CB100C2D028 /* CoreGraphics.framework */; };
+		831EA5B114B94CB100C2D028 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 831EA5AF14B94CB100C2D028 /* InfoPlist.strings */; };
+		831EA5B314B94CB100C2D028 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA5B214B94CB100C2D028 /* main.m */; };
+		831EA5B714B94CB100C2D028 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA5B614B94CB100C2D028 /* AppDelegate.m */; };
+		831EA5BA14B94CB100C2D028 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA5B914B94CB100C2D028 /* MasterViewController.m */; };
+		831EA5BD14B94CB100C2D028 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA5BC14B94CB100C2D028 /* DetailViewController.m */; };
+		831EA5C014B94CB100C2D028 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831EA5BE14B94CB100C2D028 /* MasterViewController.xib */; };
+		831EA5C314B94CB100C2D028 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831EA5C114B94CB100C2D028 /* DetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		831EA5A214B94CB100C2D028 /* HckrNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HckrNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		831EA5A614B94CB100C2D028 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		831EA5A814B94CB100C2D028 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		831EA5AA14B94CB100C2D028 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		831EA5AE14B94CB100C2D028 /* HckrNews-Info.plist */ = {isa = PBXFileReference; path = "HckrNews-Info.plist"; sourceTree = "<group>"; };
+		831EA5B014B94CB100C2D028 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		831EA5B214B94CB100C2D028 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		831EA5B414B94CB100C2D028 /* HckrNews-Prefix.pch */ = {isa = PBXFileReference; path = "HckrNews-Prefix.pch"; sourceTree = "<group>"; };
+		831EA5B514B94CB100C2D028 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		831EA5B614B94CB100C2D028 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		831EA5B814B94CB100C2D028 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		831EA5B914B94CB100C2D028 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		831EA5BB14B94CB100C2D028 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		831EA5BC14B94CB100C2D028 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		831EA5BF14B94CB100C2D028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		831EA5C214B94CB100C2D028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		831EA59F14B94CB100C2D028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831EA5A714B94CB100C2D028 /* UIKit.framework in Frameworks */,
+				831EA5A914B94CB100C2D028 /* Foundation.framework in Frameworks */,
+				831EA5AB14B94CB100C2D028 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		831EA59714B94CB100C2D028 = {
+			isa = PBXGroup;
+			children = (
+				831EA5AC14B94CB100C2D028 /* HckrNews */,
+				831EA5A514B94CB100C2D028 /* Frameworks */,
+				831EA5A314B94CB100C2D028 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		831EA5A314B94CB100C2D028 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				831EA5A214B94CB100C2D028 /* HckrNews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		831EA5A514B94CB100C2D028 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				831EA5A614B94CB100C2D028 /* UIKit.framework */,
+				831EA5A814B94CB100C2D028 /* Foundation.framework */,
+				831EA5AA14B94CB100C2D028 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		831EA5AC14B94CB100C2D028 /* HckrNews */ = {
+			isa = PBXGroup;
+			children = (
+				831EA5B514B94CB100C2D028 /* AppDelegate.h */,
+				831EA5B614B94CB100C2D028 /* AppDelegate.m */,
+				831EA5B814B94CB100C2D028 /* MasterViewController.h */,
+				831EA5B914B94CB100C2D028 /* MasterViewController.m */,
+				831EA5BB14B94CB100C2D028 /* DetailViewController.h */,
+				831EA5BC14B94CB100C2D028 /* DetailViewController.m */,
+				831EA5BE14B94CB100C2D028 /* MasterViewController.xib */,
+				831EA5C114B94CB100C2D028 /* DetailViewController.xib */,
+				831EA5AD14B94CB100C2D028 /* Supporting Files */,
+			);
+			path = HckrNews;
+			sourceTree = "<group>";
+		};
+		831EA5AD14B94CB100C2D028 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				831EA5AE14B94CB100C2D028 /* HckrNews-Info.plist */,
+				831EA5AF14B94CB100C2D028 /* InfoPlist.strings */,
+				831EA5B214B94CB100C2D028 /* main.m */,
+				831EA5B414B94CB100C2D028 /* HckrNews-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		831EA5A114B94CB100C2D028 /* HckrNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 831EA5C614B94CB100C2D028 /* Build configuration list for PBXNativeTarget "HckrNews" */;
+			buildPhases = (
+				831EA59E14B94CB100C2D028 /* Sources */,
+				831EA59F14B94CB100C2D028 /* Frameworks */,
+				831EA5A014B94CB100C2D028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HckrNews;
+			productName = HckrNews;
+			productReference = 831EA5A214B94CB100C2D028 /* HckrNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		831EA59914B94CB100C2D028 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 831EA59C14B94CB100C2D028 /* Build configuration list for PBXProject "HckrNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 831EA59714B94CB100C2D028;
+			productRefGroup = 831EA5A314B94CB100C2D028 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				831EA5A114B94CB100C2D028 /* HckrNews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		831EA5A014B94CB100C2D028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831EA5B114B94CB100C2D028 /* InfoPlist.strings in Resources */,
+				831EA5C014B94CB100C2D028 /* MasterViewController.xib in Resources */,
+				831EA5C314B94CB100C2D028 /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		831EA59E14B94CB100C2D028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831EA5B314B94CB100C2D028 /* main.m in Sources */,
+				831EA5B714B94CB100C2D028 /* AppDelegate.m in Sources */,
+				831EA5BA14B94CB100C2D028 /* MasterViewController.m in Sources */,
+				831EA5BD14B94CB100C2D028 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		831EA5AF14B94CB100C2D028 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				831EA5B014B94CB100C2D028 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		831EA5BE14B94CB100C2D028 /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				831EA5BF14B94CB100C2D028 /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		831EA5C114B94CB100C2D028 /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				831EA5C214B94CB100C2D028 /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		831EA5C414B94CB100C2D028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		831EA5C514B94CB100C2D028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		831EA5C714B94CB100C2D028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HckrNews/HckrNews-Prefix.pch";
+				INFOPLIST_FILE = "HckrNews/HckrNews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		831EA5C814B94CB100C2D028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HckrNews/HckrNews-Prefix.pch";
+				INFOPLIST_FILE = "HckrNews/HckrNews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		831EA59C14B94CB100C2D028 /* Build configuration list for PBXProject "HckrNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831EA5C414B94CB100C2D028 /* Debug */,
+				831EA5C514B94CB100C2D028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		831EA5C614B94CB100C2D028 /* Build configuration list for PBXNativeTarget "HckrNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831EA5C714B94CB100C2D028 /* Debug */,
+				831EA5C814B94CB100C2D028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 831EA59914B94CB100C2D028 /* Project object */;
+}
