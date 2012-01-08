@@ -1,14 +1,14 @@
-### HckrNews
+## HckrNews
 
 a Hacker News client for your iOS device (iPad, iPhone and iPod Touch).
 
-### Screenshots
+## Screenshots
 
 [![](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Feed.jpg)](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Feed.jpg)
 [![](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Content.jpg)](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Content.jpg)
 [![](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Pull%20to%20Refresh.jpg)](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Pull%20to%20Refresh.jpg)
 
-### Acknowledgements
+## Acknowledgements
 
 * [PullToRefresh][1] by [Leah Culver](https://github.com/leah)
 * [FeedParser][2] by [Kevin Ballard](https://github.com/kballard)
@@ -16,6 +16,8 @@ a Hacker News client for your iOS device (iPad, iPhone and iPod Touch).
 [1]:https://github.com/leah/PullToRefresh
 [2]:https://github.com/kballard/feedparser
 
-### License
+## License
 
-HckrNews is released under the MIT license.
+HckrNews is released under the [MIT license][LICENSE].
+
+[LICENSE]:https://raw.github.com/chrisledet/HckrNews/master/LICENSE
