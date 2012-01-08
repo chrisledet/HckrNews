@@ -17,6 +17,26 @@
 		831EA5BD14B94CB100C2D028 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA5BC14B94CB100C2D028 /* DetailViewController.m */; };
 		831EA5C014B94CB100C2D028 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831EA5BE14B94CB100C2D028 /* MasterViewController.xib */; };
 		831EA5C314B94CB100C2D028 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831EA5C114B94CB100C2D028 /* DetailViewController.xib */; };
+		831EA60414B9633800C2D028 /* HN HD.png in Resources */ = {isa = PBXBuildFile; fileRef = 831EA60214B962BD00C2D028 /* HN HD.png */; };
+		831EA61914B98CC400C2D028 /* HackerNewsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA61614B98CC400C2D028 /* HackerNewsFeed.m */; };
+		831EA61A14B98CC400C2D028 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA61814B98CC400C2D028 /* Story.m */; };
+		831EA65114B98D5C00C2D028 /* NSDate_FeedParserExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA63414B98D5C00C2D028 /* NSDate_FeedParserExtensions.m */; };
+		831EA65214B98D5C00C2D028 /* NSString_extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA63614B98D5C00C2D028 /* NSString_extensions.m */; };
+		831EA65314B98D5C00C2D028 /* FPEnclosure.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA63914B98D5C00C2D028 /* FPEnclosure.m */; };
+		831EA65414B98D5C00C2D028 /* FPFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA63C14B98D5C00C2D028 /* FPFeed.m */; };
+		831EA65514B98D5C00C2D028 /* FPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA63E14B98D5C00C2D028 /* FPItem.m */; };
+		831EA65614B98D5C00C2D028 /* FPLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA64014B98D5C00C2D028 /* FPLink.m */; };
+		831EA65714B98D5C00C2D028 /* FPParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA64214B98D5C00C2D028 /* FPParser.m */; };
+		831EA65814B98D5C00C2D028 /* FPXMLPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA64614B98D5C00C2D028 /* FPXMLPair.m */; };
+		831EA65914B98D5C00C2D028 /* FPXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA64814B98D5C00C2D028 /* FPXMLParser.m */; };
+		831EA65A14B98D5C00C2D028 /* FPExtensionElementNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA64C14B98D5C00C2D028 /* FPExtensionElementNode.m */; };
+		831EA65B14B98D5C00C2D028 /* FPExtensionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA64E14B98D5C00C2D028 /* FPExtensionNode.m */; };
+		831EA65C14B98D5C00C2D028 /* FPExtensionTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA65014B98D5C00C2D028 /* FPExtensionTextNode.m */; };
+		831EA66014B9915900C2D028 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EA65F14B9915900C2D028 /* PullRefreshTableViewController.m */; };
+		831EA66414B9920100C2D028 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 831EA66314B9920100C2D028 /* arrow.png */; };
+		831EA66614B9926F00C2D028 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EA66514B9926F00C2D028 /* QuartzCore.framework */; };
+		831EA66914B99A5900C2D028 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 831EA66714B99A5900C2D028 /* LICENSE */; };
+		831EA66A14B99A5900C2D028 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 831EA66814B99A5900C2D028 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,18 +44,57 @@
 		831EA5A614B94CB100C2D028 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		831EA5A814B94CB100C2D028 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		831EA5AA14B94CB100C2D028 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		831EA5AE14B94CB100C2D028 /* HckrNews-Info.plist */ = {isa = PBXFileReference; path = "HckrNews-Info.plist"; sourceTree = "<group>"; };
+		831EA5AE14B94CB100C2D028 /* HckrNews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HckrNews-Info.plist"; sourceTree = "<group>"; };
 		831EA5B014B94CB100C2D028 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		831EA5B214B94CB100C2D028 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		831EA5B414B94CB100C2D028 /* HckrNews-Prefix.pch */ = {isa = PBXFileReference; path = "HckrNews-Prefix.pch"; sourceTree = "<group>"; };
-		831EA5B514B94CB100C2D028 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		831EA5B414B94CB100C2D028 /* HckrNews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HckrNews-Prefix.pch"; sourceTree = "<group>"; };
+		831EA5B514B94CB100C2D028 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		831EA5B614B94CB100C2D028 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		831EA5B814B94CB100C2D028 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		831EA5B814B94CB100C2D028 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		831EA5B914B94CB100C2D028 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		831EA5BB14B94CB100C2D028 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		831EA5BB14B94CB100C2D028 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		831EA5BC14B94CB100C2D028 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		831EA5BF14B94CB100C2D028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
 		831EA5C214B94CB100C2D028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		831EA60214B962BD00C2D028 /* HN HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HN HD.png"; path = "../HN HD.png"; sourceTree = "<group>"; };
+		831EA61514B98CC400C2D028 /* HackerNewsFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HackerNewsFeed.h; path = Classes/HackerNewsFeed.h; sourceTree = "<group>"; };
+		831EA61614B98CC400C2D028 /* HackerNewsFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HackerNewsFeed.m; path = Classes/HackerNewsFeed.m; sourceTree = "<group>"; };
+		831EA61714B98CC400C2D028 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Story.h; path = Classes/Story.h; sourceTree = "<group>"; };
+		831EA61814B98CC400C2D028 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Story.m; path = Classes/Story.m; sourceTree = "<group>"; };
+		831EA63314B98D5C00C2D028 /* NSDate_FeedParserExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDate_FeedParserExtensions.h; sourceTree = "<group>"; };
+		831EA63414B98D5C00C2D028 /* NSDate_FeedParserExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDate_FeedParserExtensions.m; sourceTree = "<group>"; };
+		831EA63514B98D5C00C2D028 /* NSString_extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_extensions.h; sourceTree = "<group>"; };
+		831EA63614B98D5C00C2D028 /* NSString_extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_extensions.m; sourceTree = "<group>"; };
+		831EA63714B98D5C00C2D028 /* FeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedParser.h; path = Classes/FeedParser/FeedParser.h; sourceTree = "<group>"; };
+		831EA63814B98D5C00C2D028 /* FPEnclosure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPEnclosure.h; path = Classes/FeedParser/FPEnclosure.h; sourceTree = "<group>"; };
+		831EA63914B98D5C00C2D028 /* FPEnclosure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPEnclosure.m; path = Classes/FeedParser/FPEnclosure.m; sourceTree = "<group>"; };
+		831EA63A14B98D5C00C2D028 /* FPErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPErrors.h; path = Classes/FeedParser/FPErrors.h; sourceTree = "<group>"; };
+		831EA63B14B98D5C00C2D028 /* FPFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPFeed.h; path = Classes/FeedParser/FPFeed.h; sourceTree = "<group>"; };
+		831EA63C14B98D5C00C2D028 /* FPFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPFeed.m; path = Classes/FeedParser/FPFeed.m; sourceTree = "<group>"; };
+		831EA63D14B98D5C00C2D028 /* FPItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPItem.h; path = Classes/FeedParser/FPItem.h; sourceTree = "<group>"; };
+		831EA63E14B98D5C00C2D028 /* FPItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPItem.m; path = Classes/FeedParser/FPItem.m; sourceTree = "<group>"; };
+		831EA63F14B98D5C00C2D028 /* FPLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPLink.h; path = Classes/FeedParser/FPLink.h; sourceTree = "<group>"; };
+		831EA64014B98D5C00C2D028 /* FPLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPLink.m; path = Classes/FeedParser/FPLink.m; sourceTree = "<group>"; };
+		831EA64114B98D5C00C2D028 /* FPParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPParser.h; path = Classes/FeedParser/FPParser.h; sourceTree = "<group>"; };
+		831EA64214B98D5C00C2D028 /* FPParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPParser.m; path = Classes/FeedParser/FPParser.m; sourceTree = "<group>"; };
+		831EA64414B98D5C00C2D028 /* FPExtensionElementNode_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPExtensionElementNode_Private.h; sourceTree = "<group>"; };
+		831EA64514B98D5C00C2D028 /* FPXMLPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPXMLPair.h; sourceTree = "<group>"; };
+		831EA64614B98D5C00C2D028 /* FPXMLPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPXMLPair.m; sourceTree = "<group>"; };
+		831EA64714B98D5C00C2D028 /* FPXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPXMLParser.h; sourceTree = "<group>"; };
+		831EA64814B98D5C00C2D028 /* FPXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPXMLParser.m; sourceTree = "<group>"; };
+		831EA64914B98D5C00C2D028 /* FPXMLParserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPXMLParserProtocol.h; sourceTree = "<group>"; };
+		831EA64B14B98D5C00C2D028 /* FPExtensionElementNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPExtensionElementNode.h; sourceTree = "<group>"; };
+		831EA64C14B98D5C00C2D028 /* FPExtensionElementNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPExtensionElementNode.m; sourceTree = "<group>"; };
+		831EA64D14B98D5C00C2D028 /* FPExtensionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPExtensionNode.h; sourceTree = "<group>"; };
+		831EA64E14B98D5C00C2D028 /* FPExtensionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPExtensionNode.m; sourceTree = "<group>"; };
+		831EA64F14B98D5C00C2D028 /* FPExtensionTextNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPExtensionTextNode.h; sourceTree = "<group>"; };
+		831EA65014B98D5C00C2D028 /* FPExtensionTextNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPExtensionTextNode.m; sourceTree = "<group>"; };
+		831EA65E14B9915900C2D028 /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PullRefreshTableViewController.h; path = Classes/PullToRefresh/PullRefreshTableViewController.h; sourceTree = "<group>"; };
+		831EA65F14B9915900C2D028 /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PullRefreshTableViewController.m; path = Classes/PullToRefresh/PullRefreshTableViewController.m; sourceTree = "<group>"; };
+		831EA66314B9920100C2D028 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = Assets/arrow.png; sourceTree = "<group>"; };
+		831EA66514B9926F00C2D028 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		831EA66714B99A5900C2D028 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		831EA66814B99A5900C2D028 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831EA66614B9926F00C2D028 /* QuartzCore.framework in Frameworks */,
 				831EA5A714B94CB100C2D028 /* UIKit.framework in Frameworks */,
 				831EA5A914B94CB100C2D028 /* Foundation.framework in Frameworks */,
 				831EA5AB14B94CB100C2D028 /* CoreGraphics.framework in Frameworks */,
@@ -72,6 +132,7 @@
 		831EA5A514B94CB100C2D028 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				831EA66514B9926F00C2D028 /* QuartzCore.framework */,
 				831EA5A614B94CB100C2D028 /* UIKit.framework */,
 				831EA5A814B94CB100C2D028 /* Foundation.framework */,
 				831EA5AA14B94CB100C2D028 /* CoreGraphics.framework */,
@@ -82,6 +143,7 @@
 		831EA5AC14B94CB100C2D028 /* HckrNews */ = {
 			isa = PBXGroup;
 			children = (
+				831EA5C914B94CBD00C2D028 /* Classes */,
 				831EA5B514B94CB100C2D028 /* AppDelegate.h */,
 				831EA5B614B94CB100C2D028 /* AppDelegate.m */,
 				831EA5B814B94CB100C2D028 /* MasterViewController.h */,
@@ -98,12 +160,100 @@
 		831EA5AD14B94CB100C2D028 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				831EA66714B99A5900C2D028 /* LICENSE */,
+				831EA66814B99A5900C2D028 /* README.md */,
+				831EA66314B9920100C2D028 /* arrow.png */,
+				831EA60214B962BD00C2D028 /* HN HD.png */,
 				831EA5AE14B94CB100C2D028 /* HckrNews-Info.plist */,
 				831EA5AF14B94CB100C2D028 /* InfoPlist.strings */,
 				831EA5B214B94CB100C2D028 /* main.m */,
 				831EA5B414B94CB100C2D028 /* HckrNews-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		831EA5C914B94CBD00C2D028 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				831EA65D14B9914700C2D028 /* PullToRefresh */,
+				831EA61514B98CC400C2D028 /* HackerNewsFeed.h */,
+				831EA61614B98CC400C2D028 /* HackerNewsFeed.m */,
+				831EA61714B98CC400C2D028 /* Story.h */,
+				831EA61814B98CC400C2D028 /* Story.m */,
+				831EA5CA14B94CFC00C2D028 /* FeedParser */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		831EA5CA14B94CFC00C2D028 /* FeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				831EA63214B98D5C00C2D028 /* Extensions */,
+				831EA63714B98D5C00C2D028 /* FeedParser.h */,
+				831EA63814B98D5C00C2D028 /* FPEnclosure.h */,
+				831EA63914B98D5C00C2D028 /* FPEnclosure.m */,
+				831EA63A14B98D5C00C2D028 /* FPErrors.h */,
+				831EA63B14B98D5C00C2D028 /* FPFeed.h */,
+				831EA63C14B98D5C00C2D028 /* FPFeed.m */,
+				831EA63D14B98D5C00C2D028 /* FPItem.h */,
+				831EA63E14B98D5C00C2D028 /* FPItem.m */,
+				831EA63F14B98D5C00C2D028 /* FPLink.h */,
+				831EA64014B98D5C00C2D028 /* FPLink.m */,
+				831EA64114B98D5C00C2D028 /* FPParser.h */,
+				831EA64214B98D5C00C2D028 /* FPParser.m */,
+				831EA64314B98D5C00C2D028 /* Internal */,
+				831EA64A14B98D5C00C2D028 /* XML Extensions */,
+			);
+			name = FeedParser;
+			sourceTree = "<group>";
+		};
+		831EA63214B98D5C00C2D028 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				831EA63314B98D5C00C2D028 /* NSDate_FeedParserExtensions.h */,
+				831EA63414B98D5C00C2D028 /* NSDate_FeedParserExtensions.m */,
+				831EA63514B98D5C00C2D028 /* NSString_extensions.h */,
+				831EA63614B98D5C00C2D028 /* NSString_extensions.m */,
+			);
+			name = Extensions;
+			path = Classes/FeedParser/Extensions;
+			sourceTree = "<group>";
+		};
+		831EA64314B98D5C00C2D028 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				831EA64414B98D5C00C2D028 /* FPExtensionElementNode_Private.h */,
+				831EA64514B98D5C00C2D028 /* FPXMLPair.h */,
+				831EA64614B98D5C00C2D028 /* FPXMLPair.m */,
+				831EA64714B98D5C00C2D028 /* FPXMLParser.h */,
+				831EA64814B98D5C00C2D028 /* FPXMLParser.m */,
+				831EA64914B98D5C00C2D028 /* FPXMLParserProtocol.h */,
+			);
+			name = Internal;
+			path = Classes/FeedParser/Internal;
+			sourceTree = "<group>";
+		};
+		831EA64A14B98D5C00C2D028 /* XML Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				831EA64B14B98D5C00C2D028 /* FPExtensionElementNode.h */,
+				831EA64C14B98D5C00C2D028 /* FPExtensionElementNode.m */,
+				831EA64D14B98D5C00C2D028 /* FPExtensionNode.h */,
+				831EA64E14B98D5C00C2D028 /* FPExtensionNode.m */,
+				831EA64F14B98D5C00C2D028 /* FPExtensionTextNode.h */,
+				831EA65014B98D5C00C2D028 /* FPExtensionTextNode.m */,
+			);
+			name = "XML Extensions";
+			path = "Classes/FeedParser/XML Extensions";
+			sourceTree = "<group>";
+		};
+		831EA65D14B9914700C2D028 /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				831EA65E14B9915900C2D028 /* PullRefreshTableViewController.h */,
+				831EA65F14B9915900C2D028 /* PullRefreshTableViewController.m */,
+			);
+			name = PullToRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +309,10 @@
 				831EA5B114B94CB100C2D028 /* InfoPlist.strings in Resources */,
 				831EA5C014B94CB100C2D028 /* MasterViewController.xib in Resources */,
 				831EA5C314B94CB100C2D028 /* DetailViewController.xib in Resources */,
+				831EA60414B9633800C2D028 /* HN HD.png in Resources */,
+				831EA66414B9920100C2D028 /* arrow.png in Resources */,
+				831EA66914B99A5900C2D028 /* LICENSE in Resources */,
+				831EA66A14B99A5900C2D028 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +327,21 @@
 				831EA5B714B94CB100C2D028 /* AppDelegate.m in Sources */,
 				831EA5BA14B94CB100C2D028 /* MasterViewController.m in Sources */,
 				831EA5BD14B94CB100C2D028 /* DetailViewController.m in Sources */,
+				831EA61914B98CC400C2D028 /* HackerNewsFeed.m in Sources */,
+				831EA61A14B98CC400C2D028 /* Story.m in Sources */,
+				831EA65114B98D5C00C2D028 /* NSDate_FeedParserExtensions.m in Sources */,
+				831EA65214B98D5C00C2D028 /* NSString_extensions.m in Sources */,
+				831EA65314B98D5C00C2D028 /* FPEnclosure.m in Sources */,
+				831EA65414B98D5C00C2D028 /* FPFeed.m in Sources */,
+				831EA65514B98D5C00C2D028 /* FPItem.m in Sources */,
+				831EA65614B98D5C00C2D028 /* FPLink.m in Sources */,
+				831EA65714B98D5C00C2D028 /* FPParser.m in Sources */,
+				831EA65814B98D5C00C2D028 /* FPXMLPair.m in Sources */,
+				831EA65914B98D5C00C2D028 /* FPXMLParser.m in Sources */,
+				831EA65A14B98D5C00C2D028 /* FPExtensionElementNode.m in Sources */,
+				831EA65B14B98D5C00C2D028 /* FPExtensionNode.m in Sources */,
+				831EA65C14B98D5C00C2D028 /* FPExtensionTextNode.m in Sources */,
+				831EA66014B9915900C2D028 /* PullRefreshTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +421,14 @@
 		831EA5C714B94CB100C2D028 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Ledet (6422ECYJ22)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HckrNews/HckrNews-Prefix.pch";
+				GCC_STRICT_ALIASING = YES;
 				INFOPLIST_FILE = "HckrNews/HckrNews-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F2C04E08-A49A-4CC9-BAF1-28F3FE922139";
+				SDKROOT = iphoneos5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -263,10 +436,14 @@
 		831EA5C814B94CB100C2D028 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Ledet (6422ECYJ22)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HckrNews/HckrNews-Prefix.pch";
+				GCC_STRICT_ALIASING = YES;
 				INFOPLIST_FILE = "HckrNews/HckrNews-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F2C04E08-A49A-4CC9-BAF1-28F3FE922139";
+				SDKROOT = iphoneos5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -3,12 +3,13 @@
 //  HckrNews
 //
 //  Created by Chris Ledet on 1/7/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Chris Ledet. All rights reserved.
 //
 
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
+
+#define CELL_FONT_SIZE 14.0
 
 @implementation MasterViewController
 
@@ -18,7 +19,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Master", @"Master");
+        self.title = @"Hacker News";
     }
     return self;
 }
@@ -26,13 +27,32 @@
 - (void)dealloc
 {
     [_detailViewController release];
+    [feed release];
     [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+}
+
+- (void) loadFeed
+{
+    if (!feed) {
+        feed = [[HackerNewsFeed alloc] init];
+    } else {
+        [feed loadStories];
+    }
+    [self.tableView reloadData];
+    [self stopLoading];
+}
+
+- (void) refresh
+{
+#ifdef DEBUG
+    NSLog(@"Refreshing feed...");
+#endif
+    [self loadFeed];
 }
 
 #pragma mark - View lifecycle
@@ -40,46 +60,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
+    [self loadFeed];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-// Customize the number of sections in the table view.
+/* Customize the number of sections in the table view. */
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+#ifdef DEBUG
+    NSLog(@"Stories count: %d", [feed.stories count]);
+#endif
+    return [feed.stories count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -87,10 +82,10 @@
     return 1;
 }
 
-// Customize the appearance of table view cells.
+/* Customize the appearance of table view cells. */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"Feed";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -98,54 +93,23 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
 
-    // Configure the cell.
-    cell.textLabel.text = NSLocalizedString(@"Detail", @"Detail");
+    cell.textLabel.font = [UIFont systemFontOfSize:CELL_FONT_SIZE];
+    Story* story = [feed.stories objectAtIndex:indexPath.section];
+    cell.textLabel.text = story.title;
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source.
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
+/* Selected Cell */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (!self.detailViewController) {
         self.detailViewController = [[[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil] autorelease];
     }
+
+#ifdef DEBUG
+    NSLog(@"Selected Story #%d", indexPath.section);
+#endif
+    self.detailViewController.currentStory = [feed.stories objectAtIndex:indexPath.section];
     [self.navigationController pushViewController:self.detailViewController animated:YES];
 }
 

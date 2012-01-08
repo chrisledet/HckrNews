@@ -3,7 +3,7 @@
 //  HckrNews
 //
 //  Created by Chris Ledet on 1/7/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Chris Ledet. All rights reserved.
 //
 
 #import "DetailViewController.h"
@@ -14,25 +14,24 @@
 
 @implementation DetailViewController
 
-@synthesize detailItem = _detailItem;
+@synthesize currentStory = _currentStory;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
+@synthesize detailWebView = _detailWebView;
 
 - (void)dealloc
 {
-    [_detailItem release];
+    [_currentStory release];
     [_detailDescriptionLabel release];
     [super dealloc];
 }
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setCurrentStory:(Story *)currentStory
 {
-    if (_detailItem != newDetailItem) {
-        [_detailItem release]; 
-        _detailItem = [newDetailItem retain]; 
-
-        // Update the view.
+    if (_currentStory != currentStory) {
+        [_currentStory release]; 
+        _currentStory = [currentStory retain]; 
         [self configureView];
     }
 }
@@ -40,9 +39,10 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+    if (_currentStory) {
+        self.title = _currentStory.title;
+        NSURLRequest* request = [[NSURLRequest alloc] initWithURL:_currentStory.url];
+        [self.detailWebView loadRequest:request];
     }
 }
 
@@ -63,9 +63,8 @@
 
 - (void)viewDidUnload
 {
+    [_currentStory release];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -98,7 +97,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Detail", @"Detail");
+        self.title = @"Title goes here";
     }
     return self;
 }
