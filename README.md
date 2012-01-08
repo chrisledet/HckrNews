@@ -4,11 +4,11 @@ a Hacker News client for your iOS device (iPad, iPhone and iPod Touch).
 
 ### Screenshots
 
-![Content](https://github.com/chrisledet/HckrNews/blob/master/Screenshots/Content.png)
+![Content](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Content.png)
 
-![Feed](https://github.com/chrisledet/HckrNews/blob/master/Screenshots/Feed.png)
+![Feed](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Feed.png)
 
-![Pull](https://github.com/chrisledet/HckrNews/blob/master/Screenshots/Pull%20to%20Refresh.png)
+![Pull](https://github.com/chrisledet/HckrNews/raw/master/Screenshots/Pull%20to%20Refresh.png)
 
 ### Acknowledgements
 
