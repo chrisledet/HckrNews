@@ -43,6 +43,9 @@ NSString* const rssUrl = @"http://news.ycombinator.com/rss";
     NSData* feedData = [[NSData alloc] initWithContentsOfURL:feedURL];
     
     feed = [FPParser parsedFeedWithData:feedData error:nil];
+    if (stories) {
+        [stories release];
+    }
     stories = [[NSMutableArray alloc] init];
     
     for (FPItem* item in feed.items) {
@@ -54,6 +57,7 @@ NSString* const rssUrl = @"http://news.ycombinator.com/rss";
         story.description   = item.content;
 
         [stories addObject:story];
+        [story release];
     }
     
 //    [feed release]; /* crashes here... */
