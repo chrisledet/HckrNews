@@ -22,6 +22,7 @@
 }
 
 - (NSComparisonResult)compare:(Story *)otherStory {
+    /* descending sort */
     return [otherStory.description compare:description];
 }
 

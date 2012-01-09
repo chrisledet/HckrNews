@@ -9,29 +9,26 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
-- (void)configureView;
+- (void) configureView;
 @end
 
 @implementation DetailViewController
 
-@synthesize currentStory = _currentStory;
-@synthesize detailDescriptionLabel = _detailDescriptionLabel;
-@synthesize detailWebView = _detailWebView;
+@synthesize currentStory, storyWebView;
 
 - (void)dealloc
 {
-    [_currentStory release];
-    [_detailDescriptionLabel release];
+    [currentStory release];
     [super dealloc];
 }
 
-#pragma mark - Managing the detail item
+#pragma mark - Managing the current story
 
-- (void)setCurrentStory:(Story *)currentStory
+- (void)setCurrentStory:(Story *)story
 {
-    if (_currentStory != currentStory) {
-        [_currentStory release]; 
-        _currentStory = [currentStory retain]; 
+    if (currentStory != story) {
+        [currentStory release];
+        currentStory = [story retain];
         [self configureView];
     }
 }
@@ -39,10 +36,10 @@
 - (void)configureView
 {
     /* Update the UI for the current story */
-    if (_currentStory) {
-        self.title = _currentStory.title;
-        NSURLRequest* request = [[NSURLRequest alloc] initWithURL:_currentStory.url];
-        [self.detailWebView loadRequest:request];
+    if (currentStory) {
+        self.title = currentStory.title;
+        NSURLRequest* request = [[NSURLRequest alloc] initWithURL:currentStory.url];
+        [storyWebView loadRequest:request];
         [request release];
     }
 }
@@ -62,13 +59,8 @@
 
 - (void)viewDidUnload
 {
-    [_currentStory release];
+    [currentStory release];
     [super viewDidUnload];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -76,14 +68,10 @@
     [super viewDidAppear:animated];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
 - (void)viewDidDisappear:(BOOL)animated
 {
 	[super viewDidDisappear:animated];
+    [storyWebView stopLoading];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -95,9 +83,6 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.title = @"Title goes here";
-    }
     return self;
 }
 							

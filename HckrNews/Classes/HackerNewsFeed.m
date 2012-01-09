@@ -10,6 +10,12 @@
 
 NSString* const rssUrl = @"http://news.ycombinator.com/rss";
 
+@interface HackerNewsFeed()
+
+- (void) sortStories:(NSMutableArray *) s;
+
+@end
+
 @implementation HackerNewsFeed
 
 @synthesize stories;
@@ -20,9 +26,15 @@ NSString* const rssUrl = @"http://news.ycombinator.com/rss";
     [super dealloc];
 }
 
-- (void) sortStories:(NSMutableArray *) s
+- (id) init
 {
-    [s sortUsingSelector:@selector(compare:)];
+    self = [super init];
+
+    if (self) {
+        [self loadStories];
+    }
+
+    return self;
 }
 
 - (void) loadStories
@@ -44,22 +56,16 @@ NSString* const rssUrl = @"http://news.ycombinator.com/rss";
         [stories addObject:story];
     }
     
-//    [feed release];
+//    [feed release]; /* crashes here... */
     [feedData release];
     [feedURL release];
     
     [self sortStories:stories];
 }
 
-- (id) init
-{    
-    self = [super init];
-    
-    if (self) {
-        [self loadStories];
-    }
-    
-    return self;
+- (void) sortStories:(NSMutableArray *) s
+{
+    [s sortUsingSelector:@selector(compare:)];
 }
 
 @end

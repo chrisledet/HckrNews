@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "Story.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController {
+    Story* currentStory;
+    UIWebView* storyWebView;
+}
 
 @property (strong, nonatomic) Story* currentStory;
-
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
-
-@property (strong, nonatomic) IBOutlet UIWebView *detailWebView;
+@property (strong, nonatomic) IBOutlet UIWebView *storyWebView;
 
 @end

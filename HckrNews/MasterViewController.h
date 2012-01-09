@@ -14,6 +14,7 @@
 
 @interface MasterViewController : PullRefreshTableViewController {
     HackerNewsFeed* feed;
+    DetailViewController *detailViewController;
 }
 
 @property (strong, nonatomic) DetailViewController *detailViewController;

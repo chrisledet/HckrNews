@@ -15,9 +15,9 @@
     NSURL* commentsUrl;
 }
 
-@property (retain) NSString* title;
-@property (retain) NSString* description;
-@property (retain) NSURL* url;
-@property (retain) NSURL* commentsUrl;
+@property (retain, nonatomic) NSString* title;
+@property (retain, nonatomic) NSString* description;
+@property (retain, nonatomic) NSURL* url;
+@property (retain, nonatomic) NSURL* commentsUrl;
 
 @end

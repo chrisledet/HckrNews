@@ -17,7 +17,7 @@ extern NSString* const rssUrl;
     FPFeed* feed;
 }
 
-@property (retain) NSMutableArray* stories;
+@property (retain, nonatomic) NSMutableArray* stories;
 
 - (void) loadStories;
 

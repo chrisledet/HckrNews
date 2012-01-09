@@ -16,7 +16,7 @@
 
 @implementation MasterViewController
 
-@synthesize detailViewController = _detailViewController;
+@synthesize detailViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,7 +29,7 @@
 							
 - (void)dealloc
 {
-    [_detailViewController release];
+    [detailViewController release];
     [feed release];
     [super dealloc];
 }
