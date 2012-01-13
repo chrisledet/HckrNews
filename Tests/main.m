@@ -3,7 +3,7 @@
 //  Tests
 //
 //  Created by Chris Ledet on 1/12/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Chris Ledet. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

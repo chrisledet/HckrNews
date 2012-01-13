@@ -48,7 +48,9 @@
 {
     /* Update the web view for the current story's comments */
     if (currentStory) {
+#ifdef DEBUG
         NSLog(@"Comments URL: %@", currentStory.commentsUrl.absoluteString);
+#endif
         NSURLRequest* request = [[NSURLRequest alloc] initWithURL:currentStory.commentsUrl];
         [storyWebView loadRequest:request];
         [request release];
