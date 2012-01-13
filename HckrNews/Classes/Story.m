@@ -21,7 +21,6 @@
 }
 
 - (NSComparisonResult)compare:(Story *)otherStory {
-    /* descending sort */
     return [[otherStory commentsUrlAsString] compare:[self commentsUrlAsString]];
 }
 
@@ -32,7 +31,7 @@
 
 - (NSString*) description
 {
-    return [[NSString stringWithFormat:@"Title: %@, URL: %@", title, [self commentsUrlAsString]] autorelease];
+    return [NSString stringWithFormat:@"Title: %@, URL: %@", title, [self commentsUrlAsString]];
 }
 
 @end
