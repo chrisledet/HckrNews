@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830B33CB14C0012F00CCB8A2 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B33CA14C0012F00CCB8A2 /* GHUnitIOS.framework */; };
 		831EA5A714B94CB100C2D028 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EA5A614B94CB100C2D028 /* UIKit.framework */; };
 		831EA5A914B94CB100C2D028 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EA5A814B94CB100C2D028 /* Foundation.framework */; };
 		831EA5B114B94CB100C2D028 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 831EA5AF14B94CB100C2D028 /* InfoPlist.strings */; };
@@ -41,7 +42,6 @@
 		833F845214BFEBD900F9BD10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EA5AA14B94CB100C2D028 /* CoreGraphics.framework */; };
 		833F845814BFEBD900F9BD10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 833F845614BFEBD900F9BD10 /* InfoPlist.strings */; };
 		833F845A14BFEBD900F9BD10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 833F845914BFEBD900F9BD10 /* main.m */; };
-		833F846914BFEC6000F9BD10 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833F846814BFEC6000F9BD10 /* GHUnitIOS.framework */; };
 		833F846C14BFED3800F9BD10 /* StoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 833F846B14BFED3800F9BD10 /* StoryTest.m */; };
 		833F847314BFEEDD00F9BD10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EA5AA14B94CB100C2D028 /* CoreGraphics.framework */; };
 		833F847414BFEEE700F9BD10 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EA66514B9926F00C2D028 /* QuartzCore.framework */; };
@@ -62,6 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		830B33CA14C0012F00CCB8A2 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ../../Frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
 		831EA5A214B94CB100C2D028 /* HckrNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HckrNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		831EA5A614B94CB100C2D028 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		831EA5A814B94CB100C2D028 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -123,7 +124,6 @@
 		833F845714BFEBD900F9BD10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		833F845914BFEBD900F9BD10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		833F845B14BFEBD900F9BD10 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		833F846814BFEC6000F9BD10 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ../../Frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
 		833F846B14BFED3800F9BD10 /* StoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +146,7 @@
 				833F845014BFEBD900F9BD10 /* UIKit.framework in Frameworks */,
 				833F845114BFEBD900F9BD10 /* Foundation.framework in Frameworks */,
 				833F845214BFEBD900F9BD10 /* CoreGraphics.framework in Frameworks */,
-				833F846914BFEC6000F9BD10 /* GHUnitIOS.framework in Frameworks */,
+				830B33CB14C0012F00CCB8A2 /* GHUnitIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +175,7 @@
 		831EA5A514B94CB100C2D028 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				833F846814BFEC6000F9BD10 /* GHUnitIOS.framework */,
+				830B33CA14C0012F00CCB8A2 /* GHUnitIOS.framework */,
 				831EA66514B9926F00C2D028 /* QuartzCore.framework */,
 				831EA5A614B94CB100C2D028 /* UIKit.framework */,
 				831EA5A814B94CB100C2D028 /* Foundation.framework */,
@@ -513,7 +513,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -530,7 +530,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -548,10 +548,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HckrNews/HckrNews-Prefix.pch";
 				GCC_STRICT_ALIASING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "HckrNews/HckrNews-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F2C04E08-A49A-4CC9-BAF1-28F3FE922139";
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -563,10 +564,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HckrNews/HckrNews-Prefix.pch";
 				GCC_STRICT_ALIASING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "HckrNews/HckrNews-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F2C04E08-A49A-4CC9-BAF1-28F3FE922139";
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -639,6 +641,7 @@
 				833F846714BFEBD900F9BD10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
