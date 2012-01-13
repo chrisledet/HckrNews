@@ -14,7 +14,7 @@
 
 @implementation DetailViewController
 
-@synthesize currentStory, storyWebView;
+@synthesize currentStory, storyWebView, commentsButtonItem;
 
 - (void)dealloc
 {
@@ -39,6 +39,17 @@
     if (currentStory) {
         self.title = currentStory.title;
         NSURLRequest* request = [[NSURLRequest alloc] initWithURL:currentStory.url];
+        [storyWebView loadRequest:request];
+        [request release];
+    }
+}
+
+- (IBAction) viewStoryCommentsPage:(id) sender;
+{
+    /* Update the web view for the current story's comments */
+    if (currentStory) {
+        NSLog(@"Comments URL: %@", currentStory.commentsUrl.absoluteString);
+        NSURLRequest* request = [[NSURLRequest alloc] initWithURL:currentStory.commentsUrl];
         [storyWebView loadRequest:request];
         [request release];
     }

@@ -12,9 +12,13 @@
 @interface DetailViewController : UIViewController {
     Story* currentStory;
     UIWebView* storyWebView;
+    UIBarButtonItem* commentsButtonItem;
 }
 
 @property (strong, nonatomic) Story* currentStory;
-@property (strong, nonatomic) IBOutlet UIWebView *storyWebView;
+@property (strong, nonatomic) IBOutlet UIWebView* storyWebView;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem* commentsButtonItem;
+
+- (IBAction) viewStoryCommentsPage:(id)sender;
 
 @end

@@ -10,12 +10,11 @@
 
 @implementation Story
 
-@synthesize title, description, url, commentsUrl;
+@synthesize title, url, commentsUrl;
 
 - (void) dealloc
 {
     [title release];
-    [description release];
     [url release];
     [commentsUrl release];
     [super dealloc];
@@ -23,7 +22,17 @@
 
 - (NSComparisonResult)compare:(Story *)otherStory {
     /* descending sort */
-    return [otherStory.description compare:description];
+    return [[otherStory commentsUrlAsString] compare:[self commentsUrlAsString]];
+}
+
+- (NSString*) commentsUrlAsString
+{
+    return commentsUrl.absoluteString;
+}
+
+- (NSString*) description
+{
+    return [[NSString stringWithFormat:@"Title: %@, URL: %@", title, [self commentsUrlAsString]] autorelease];
 }
 
 @end

@@ -11,9 +11,8 @@
 NSString* const rssUrl = @"http://news.ycombinator.com/rss";
 
 @interface HackerNewsFeed()
-
 - (void) sortStories:(NSMutableArray *) s;
-
+- (NSURL*) parseURLFromString:(NSString*)commentUrlString;
 @end
 
 @implementation HackerNewsFeed
@@ -50,26 +49,31 @@ NSString* const rssUrl = @"http://news.ycombinator.com/rss";
     
     for (FPItem* item in feed.items) {
         Story* story = [[Story alloc] init];
+        story.title = item.title;
+        story.url = [NSURL URLWithString:item.link.href];
+        story.commentsUrl = [self parseURLFromString:item.description];
         
-        story.title         = item.title;
-        story.url           = [NSURL URLWithString:item.link.href];
-        story.commentsUrl   = [NSURL URLWithString:item.content];
-        story.description   = item.content;
-
         [stories addObject:story];
         [story release];
     }
-    
-//    [feed release]; /* crashes here... */
+
     [feedData release];
     [feedURL release];
-    
+
     [self sortStories:stories];
 }
 
 - (void) sortStories:(NSMutableArray *) s
 {
     [s sortUsingSelector:@selector(compare:)];
+}
+
+- (NSURL*) parseURLFromString:(NSString*)commentUrlString
+{
+    NSRange startOfHref = [commentUrlString rangeOfString:@"=\""];
+    NSInteger lengthCutOff = [commentUrlString length] - 23;
+    NSString* stringURL = [commentUrlString substringWithRange:NSMakeRange(startOfHref.location + 2, lengthCutOff)];
+    return [NSURL URLWithString:stringURL];
 }
 
 @end

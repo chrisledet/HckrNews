@@ -13,6 +13,7 @@
 extern NSString* const rssUrl;
 
 @interface HackerNewsFeed : NSObject {
+@private
     NSMutableArray* stories;
     FPFeed* feed;
 }

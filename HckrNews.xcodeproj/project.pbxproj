@@ -37,6 +37,7 @@
 		831EA66614B9926F00C2D028 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EA66514B9926F00C2D028 /* QuartzCore.framework */; };
 		831EA66914B99A5900C2D028 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 831EA66714B99A5900C2D028 /* LICENSE */; };
 		831EA66A14B99A5900C2D028 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 831EA66814B99A5900C2D028 /* README.md */; };
+		833F844714BFDA8C00F9BD10 /* Chat Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 833F844614BFDA8C00F9BD10 /* Chat Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		831EA66514B9926F00C2D028 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		831EA66714B99A5900C2D028 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		831EA66814B99A5900C2D028 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		833F844614BFDA8C00F9BD10 /* Chat Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Chat Icon.png"; path = "Assets/Chat Icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		831EA5AD14B94CB100C2D028 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				833F844614BFDA8C00F9BD10 /* Chat Icon.png */,
 				831EA66714B99A5900C2D028 /* LICENSE */,
 				831EA66814B99A5900C2D028 /* README.md */,
 				831EA66314B9920100C2D028 /* arrow.png */,
@@ -313,6 +316,7 @@
 				831EA66414B9920100C2D028 /* arrow.png in Resources */,
 				831EA66914B99A5900C2D028 /* LICENSE in Resources */,
 				831EA66A14B99A5900C2D028 /* README.md in Resources */,
+				833F844714BFDA8C00F9BD10 /* Chat Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +471,7 @@
 				831EA5C814B94CB100C2D028 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

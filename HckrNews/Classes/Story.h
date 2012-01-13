@@ -10,14 +10,14 @@
 
 @interface Story : NSObject {
     NSString* title;
-    NSString* description;
     NSURL* url;
     NSURL* commentsUrl;
 }
 
 @property (retain, nonatomic) NSString* title;
-@property (retain, nonatomic) NSString* description;
 @property (retain, nonatomic) NSURL* url;
 @property (retain, nonatomic) NSURL* commentsUrl;
+
+- (NSString*) commentsUrlAsString;
 
 @end
