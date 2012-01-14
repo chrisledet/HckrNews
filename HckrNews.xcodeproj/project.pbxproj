@@ -557,13 +557,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Ledet (6422ECYJ22)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chris Ledet (6422ECYJ22)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HckrNews/HckrNews-Prefix.pch";
 				GCC_STRICT_ALIASING = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "HckrNews/HckrNews-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F2C04E08-A49A-4CC9-BAF1-28F3FE922139";
+				PROVISIONING_PROFILE = "EEB59BC2-5D20-4079-B6F7-9EC9E926AC0A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EEB59BC2-5D20-4079-B6F7-9EC9E926AC0A";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -572,14 +574,16 @@
 		831EA5C814B94CB100C2D028 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Ledet (6422ECYJ22)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Christopher Ledet";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Christopher Ledet";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HckrNews/HckrNews-Prefix.pch";
 				GCC_STRICT_ALIASING = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "HckrNews/HckrNews-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F2C04E08-A49A-4CC9-BAF1-28F3FE922139";
+				PROVISIONING_PROFILE = "B236F242-5071-415C-8400-1F378EF0B18A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B236F242-5071-415C-8400-1F378EF0B18A";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};

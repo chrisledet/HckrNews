@@ -9,12 +9,13 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
-- (void) configureView;
+- (void)configureView;
+- (void)showURLonWebView:(NSURL*)urlString;
 @end
 
 @implementation DetailViewController
 
-@synthesize currentStory, storyWebView, commentsButtonItem;
+@synthesize currentStory, webView, commentsButtonItem;
 
 - (void)dealloc
 {
@@ -38,23 +39,23 @@
     /* Update the UI for the current story */
     if (currentStory) {
         self.title = currentStory.title;
-        NSURLRequest* request = [[NSURLRequest alloc] initWithURL:currentStory.url];
-        [storyWebView loadRequest:request];
-        [request release];
+        [self showURLonWebView:currentStory.url];
     }
 }
 
-- (IBAction) viewStoryCommentsPage:(id) sender;
+- (IBAction)viewStoryCommentsPage:(id)sender;
 {
     /* Update the web view for the current story's comments */
     if (currentStory) {
-#ifdef DEBUG
-        NSLog(@"Comments URL: %@", currentStory.commentsUrl.absoluteString);
-#endif
-        NSURLRequest* request = [[NSURLRequest alloc] initWithURL:currentStory.commentsUrl];
-        [storyWebView loadRequest:request];
-        [request release];
+        [self showURLonWebView:currentStory.commentsUrl];
     }
+}
+
+- (void)showURLonWebView:(NSURL *)url
+{
+    NSURLRequest* request = [[NSURLRequest alloc] initWithURL:url];
+    [webView loadRequest:request];
+    [request release];
 }
 
 - (void)didReceiveMemoryWarning
@@ -84,7 +85,7 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
 	[super viewDidDisappear:animated];
-    [storyWebView stopLoading];
+    [webView stopLoading];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
